@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 17:52:17 by amorion-          #+#    #+#             */
-/*   Updated: 2022/06/24 19:18:43 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/06/25 10:48:30 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,16 +43,9 @@ void	dispint(char *argv)
 	else if(!isprint(n))
 		std::cout << "char: Non displayable\n";
 	else
-		std::cout << "char:" << c << std::endl;
+		std::cout << "char: \'" << c << "\'\n";
 	std::cout << "int: " << n << std::endl;
-	if(n >= 1000000)
-	{
-		std::cout << "float: " << f << "f" << std::endl;
-		std::cout << "double: " << d << std::endl;
-	}
-	else
-	{
-		std::cout << "float: " << f << ".0f" << std::endl;
-		std::cout << "double: " << d << ".0" << std::endl;
-	}
+	std::cout.precision(1),
+    std::cout << "float: " << std::fixed << f  << "f\n";
+    std::cout << "double: " << std::fixed << d << std::endl;
 }

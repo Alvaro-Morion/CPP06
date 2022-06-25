@@ -6,11 +6,11 @@
 #    By: amorion- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/24 16:50:08 by amorion-          #+#    #+#              #
-#    Updated: 2022/06/25 11:02:56 by amorion-         ###   ########.fr        #
+#    Updated: 2022/06/25 12:20:39 by amorion-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = checks.cpp char.cpp int.cpp float.cpp double.cpp main.cpp
+SRCS = main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
@@ -18,7 +18,7 @@ CC = clang++
 
 FLAGS = -std=c++98 -Wall -Werror -Wextra -g
 
-NAME = convert
+NAME = serialization
 
 all: $(NAME)
 

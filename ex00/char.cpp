@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 17:38:10 by amorion-          #+#    #+#             */
-/*   Updated: 2022/06/24 17:58:20 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/06/25 10:48:20 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,11 @@ bool is_char(char *argv)
 	int n = static_cast<int>(argv[0]);
 	float f = static_cast<float>(argv[0]);
 	double d = static_cast<double>(argv[0]);
-	std::cout << "char: " << c << std::endl;
+	std::cout << "char: \'" << c << "\'\n";
 	std::cout << "int: " << n << std::endl;
-	std::cout << "float: " << f << ".0f" << std::endl;
-	std::cout << "double: " << d << ".0 " << std::endl;
+	std::cout.precision(1);
+    std::cout << "float: " << std::fixed << f  << "f\n";
+    std::cout << "double: " << std::fixed << d << std::endl;
 	return(1);
 
 }

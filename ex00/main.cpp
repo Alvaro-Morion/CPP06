@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 16:53:51 by amorion-          #+#    #+#             */
-/*   Updated: 2022/06/24 18:50:08 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/06/25 11:05:57 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,12 @@ int main (int argc, char **argv)
 		return(0);
 	if(is_int(argv[1]))
 		return(0);
+	if(is_double(argv[1]))
+		return(0);
+	if(is_float(argv[1]))
+		return(0);
+	else
+		std::cout << "char: impossible\n" << "int: impossible\n"
+			<< "float: impossible\n" << "double: impossible\n"; 
 	return(0);
 }
