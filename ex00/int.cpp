@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 17:52:17 by amorion-          #+#    #+#             */
-/*   Updated: 2022/06/25 10:48:30 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/08/12 17:29:45 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ bool is_int(char *argv)
 	if(argv[i])
 		return(0);
 	char *endp;
-	if(strtol(argv, &endp, 10) > INT_MAX || strtoll(argv, &endp, 10) < INT_MIN)
+	if(strtol(argv, &endp, 10) > INT_MAX || strtol(argv, &endp, 10) < INT_MIN)
 		return(0);
 	dispint(argv);
 	return(1);
